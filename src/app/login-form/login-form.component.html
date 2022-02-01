@@ -1,0 +1,20 @@
+<!-- <p>login-form works!</p> -->
+
+<form [formGroup]="loginForm">
+  Value: {{ loginForm.value | json }}
+
+  <!-- <mat-input-field>
+    <input type="text">
+  </mat-input-field> -->
+
+  <hr />
+
+  <div style="display: flex; flex-direction: column">
+    <mat-form-field>
+      <input matInput placeholder="email" formControlName="email" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="password" formControlName="password" />
+    </mat-form-field>
+  </div>
+</form>
